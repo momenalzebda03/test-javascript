@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <!-- start 1 -->
+    <script>
+        // Code One
+        // The code will not work because the h1 is not reached
+        document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        // Code Two
+        // The code will not work because the h1 is not reached
+        window.onload = function () {
+            document.getElementById("el").style.color = "red";
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="el">Page Title</h1>
+    <script>
+        // Code Three
+        // The code will run and print the sentence and flash red
+        document.getElementById("el").style.color = "red";
+    </script>
+    <!-- end 9 -->
+</body>
+    <script src="indx.js"></script>
+</html>
