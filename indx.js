@@ -53,13 +53,41 @@ console.log(number_tow + "\n" + number_one);
 console.log(`${number_tow}
 ${number_one}`);
 
-console.log(elzero.innerHTML); // object
-console.log(typeof elzero); // object
+console.log(elzero.innerHTML);
+console.log(typeof elzero);
 
 console.log(`\`I'm In \n\\\\\nLove \\\\ """ '''\n++ With ++\n\\"""\\"""\n""javascript""\`\``);
 
-let a = 21;
-let b = 20;
+// let a = 21;
+// let b = 20;
 
-console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
+// console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`);
 // end 17
+
+// start 18
+// let num = 3;
+
+// console.log(num + num);
+// console.log(num + num + false);
+// console.log(num + num - false);
+// console.log(num * num - true - true - true);
+// console.log(num + num - false - false);
+// console.log(Number(num) + Number(num));
+
+let num = +"10";
+
+console.log(num + num);
+console.log(num + num + false);
+console.log(num + num - false);
+console.log(num + num - false - false);
+
+let points = 10;
+
+points += 3;
+
+console.log(points); // 13
+
+points -= 5;
+
+console.log(points); // 8;
+// end 22
