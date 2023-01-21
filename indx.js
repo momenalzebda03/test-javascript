@@ -74,12 +74,12 @@ console.log(`\`I'm In \n\\\\\nLove \\\\ """ '''\n++ With ++\n\\"""\\"""\n""javas
 // console.log(num + num - false - false);
 // console.log(Number(num) + Number(num));
 
-let num = +"10";
+// let num = +"10";
 
-console.log(num + num);
-console.log(num + num + false);
-console.log(num + num - false);
-console.log(num + num - false - false);
+// console.log(num + num);
+// console.log(num + num + false);
+// console.log(num + num - false);
+// console.log(num + num - false - false);
 
 let points = 10;
 
@@ -91,3 +91,43 @@ points -= 5;
 
 console.log(points); // 8;
 // end 22
+
+let a = 1_00;
+let b = 2_00.5;
+let c = 1e2;
+let d = 2.4;
+
+console.log(Math.min(a, b, c, d), Math.round(d));
+console.log(a + "0");
+// start 23
+console.log(100_000);
+console.log(100000);
+console.log(5e4 + 5e4);
+console.log(50000 + 50000);
+console.log(1000 * 100);
+console.log(100 * 1000);
+console.log(200000 - 100000);
+console.log(300000 - 200000);
+console.log(400000 - 300000);
+console.log(500000 - 400000);
+console.log(600000 - 500000);
+console.log(700000 - 600000);
+console.log(800000 - 700000);
+console.log(Math.min(9007199254740992, 9007199254740991));
+console.log(Math.max(16, 15));
+
+let myVar = +"100.56789";
+
+console.log(Math.floor(myVar));
+console.log(Number(myVar.toFixed(2)));
+
+let num = 10;
+
+console.log(10 - 8);
+
+let flt = 10.4;
+
+console.log(Math.floor(flt));
+
+console.log(Math.random(0, 1, 2, 3, 4));
+// end 26
