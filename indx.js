@@ -92,13 +92,13 @@ points -= 5;
 console.log(points); // 8;
 // end 22
 
-let a = 1_00;
+// let a = 1_00;
 let b = 2_00.5;
 let c = 1e2;
 let d = 2.4;
 
-console.log(Math.min(a, b, c, d), Math.round(d));
-console.log(a + "0");
+// console.log(Math.min(a, b, c, d), Math.round(d));
+// console.log(a + "0");
 // start 23
 console.log(100_000);
 console.log(100000);
@@ -131,3 +131,36 @@ console.log(Math.floor(flt));
 
 console.log(Math.random(0, 1, 2, 3, 4));
 // end 26
+
+var my_name = "  momen  ";
+
+console.log(my_name.trim().charAt(4).toUpperCase());
+
+// start 27
+let a = "Elzero Web Scholl";
+
+let charat2 = a.charAt(2).toUpperCase();
+let charat3 = a.charAt(3);
+let charat4 = a.charAt(4);
+let charat5 = a.charAt(5);
+
+console.log(charat2 + charat3 + charat4 + charat5);
+console.log(a.charAt(13).toUpperCase().repeat(8));
+console.log(a.split("Web Scholl"));
+
+let substr1 = a.substr(0, 6);
+let substr2 = a.substr(11);
+
+console.log(substr1 + " " + substr2);
+console.log(a.toLowerCase(0));
+
+let userName = "Elzero";
+console.log(userName.charAt(0).toLowerCase(0));
+console.log(userName.charAt(0).toLowerCase(0).repeat(3));
+
+let word = "Elzero";
+
+console.log(word.includes("z"));
+console.log(word.startsWith("E"));
+console.log(word.endsWith("o"));
+// end 30
