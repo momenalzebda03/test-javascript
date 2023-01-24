@@ -93,8 +93,8 @@ console.log(points); // 8;
 // end 22
 
 // let a = 1_00;
-let b = 2_00.5;
-let c = 1e2;
+// let b = 2_00.5;
+// let c = 1e2;
 let d = 2.4;
 
 // console.log(Math.min(a, b, c, d), Math.round(d));
@@ -137,22 +137,22 @@ var my_name = "  momen  ";
 console.log(my_name.trim().charAt(4).toUpperCase());
 
 // start 27
-let a = "Elzero Web Scholl";
+// let a = "Elzero Web Scholl";
 
-let charat2 = a.charAt(2).toUpperCase();
-let charat3 = a.charAt(3);
-let charat4 = a.charAt(4);
-let charat5 = a.charAt(5);
+// let charat2 = a.charAt(2).toUpperCase();
+// let charat3 = a.charAt(3);
+// let charat4 = a.charAt(4);
+// let charat5 = a.charAt(5);
 
-console.log(charat2 + charat3 + charat4 + charat5);
-console.log(a.charAt(13).toUpperCase().repeat(8));
-console.log(a.split("Web Scholl"));
+// console.log(charat2 + charat3 + charat4 + charat5);
+// console.log(a.charAt(13).toUpperCase().repeat(8));
+// console.log(a.split("Web Scholl"));
 
-let substr1 = a.substr(0, 6);
-let substr2 = a.substr(11);
+// let substr1 = a.substr(0, 6);
+// let substr2 = a.substr(11);
 
-console.log(substr1 + " " + substr2);
-console.log(a.toLowerCase(0));
+// console.log(substr1 + " " + substr2);
+// console.log(a.toLowerCase(0));
 
 let userName = "Elzero";
 console.log(userName.charAt(0).toLowerCase(0));
@@ -164,3 +164,33 @@ console.log(word.includes("z"));
 console.log(word.startsWith("E"));
 console.log(word.endsWith("o"));
 // end 30
+
+// start 31
+
+console.log(100 == "100");
+console.log(100 < 1000);
+console.log(110 > 100 || 10 < 20);
+console.log(-10 == "-10");
+console.log(+-50 != +"-40");
+console.log(+10 != -"-40");
+console.log(+"10" === 10);
+console.log(+20 > false);
+
+let num1 = 10;
+let num2 = 20;
+
+console.log(num1 != num2);
+console.log(num2 != num1);
+console.log(num1 < num2);
+console.log(num2 > num1);
+console.log(num1 !== num2);
+console.log(num2 !== num1);
+
+let a = 20;
+let b = 30;
+let c = 10;
+
+console.log(a < b && a > c || a > b);
+console.log(a < b && a > c);
+console.log(!(a == b) && !(a == b) && !(a == c) && !(a == c));
+// end 32
