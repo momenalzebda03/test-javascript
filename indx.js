@@ -121,7 +121,7 @@ let myVar = +"100.56789";
 console.log(Math.floor(myVar));
 console.log(Number(myVar.toFixed(2)));
 
-let num = 10;
+// let num = 10;
 
 console.log(10 - 8);
 
@@ -176,21 +176,86 @@ console.log(+10 != -"-40");
 console.log(+"10" === 10);
 console.log(+20 > false);
 
-let num1 = 10;
-let num2 = 20;
+// let num1 = 10;
+// let num2 = 20;
 
-console.log(num1 != num2);
-console.log(num2 != num1);
-console.log(num1 < num2);
-console.log(num2 > num1);
-console.log(num1 !== num2);
-console.log(num2 !== num1);
+// console.log(num1 != num2);
+// console.log(num2 != num1);
+// console.log(num1 < num2);
+// console.log(num2 > num1);
+// console.log(num1 !== num2);
+// console.log(num2 !== num1);
 
-let a = 20;
+// let a = 20;
 let b = 30;
 let c = 10;
 
-console.log(a < b && a > c || a > b);
-console.log(a < b && a > c);
-console.log(!(a == b) && !(a == b) && !(a == c) && !(a == c));
+// console.log(a < b && a > c || a > b);
+// console.log(a < b && a > c);
+// console.log(!(a == b) && !(a == b) && !(a == c) && !(a == c));
 // end 32
+
+// start 33
+let a = 10;
+
+a < 10 ? console.log(10) : a >= 10 && a <= 40 ? console.log("10 to 40") : a > 40 ? console.log("> 40") : console.log("unknown");
+
+let st = "Elzero Web School";
+
+if (st.length * 2 == "34") {
+    console.log("Good");
+}
+if (st.toLowerCase().charAt(7) === "w") {
+    console.log("Good");
+}
+if (st !== "string") {
+    console.log("Good");
+}
+if (typeof Number(st) === "number") {
+    console.log("Good");
+}
+if ("ElzeroElzero" === "ElzeroElzero") {
+    console.log("Good");
+}
+
+let num = 100;
+
+if (num < 10) {
+    document.write("00" + num);
+} else if (num > 10 || num < 100) {
+    document.write("00" + num);
+} else if (num >= 100) {
+    document.write(num);
+}
+
+// let num1 = 9;
+// let str = "9";
+// let str2 = "20";
+
+// if (num1 === str) {
+//     document.write("<br>" + `${num1} Is The Same Value As ${str}`);
+// }
+// if (num1 == str) {
+//     document.write("<br>" + `${num1} Is The Same Value As ${str} But Not The Same Type`);
+// }
+// if (num1 != str2) {
+//     document.write("<br>" + `${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+// }
+// if (str !== str2) {
+//     document.write("<br>" + `${str} Is The Same Type As ${str2} But Not The Same Value`);
+// }
+
+let num1 = 10;
+let num2 = 30;
+let num3 = "30";
+
+if (num3 > num1 && num3 !== num2) {
+    document.write("<br>" + num3 + "Is Larger Than" + num1 + "And Type string Not The Same Type As number");
+}
+if (num3 > num1 && num3 == num2 && num3 !== num2) {
+    document.write("<br>" + num3 + "Is Larger Than 10 And Value Is The Same As" + num3 + " And Type string Not The Same Type As number");
+}
+if (num3 !== num1 && num3 !== num2) {
+    document.write("<br>" + `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`);
+}
+// end 37
