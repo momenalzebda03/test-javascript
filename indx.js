@@ -259,3 +259,59 @@ if (num3 !== num1 && num3 !== num2) {
     document.write("<br>" + `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`);
 }
 // end 37
+// start 38
+
+let jop = "IT";
+let salary = 0;
+
+switch (jop) {
+    case (jop = "Manager"):
+        salary = 8000;
+        console.log(salary);
+        break;
+    case jop = "IT": case jop = "Support":
+        salary = 6000;
+        console.log(salary);
+        break;
+    case jop = "Developer": case jop == "Desinger":
+        salary = 7000;
+        console.log(salary);
+        break;
+    default:
+        salary = 4000;
+        console.log(salary);
+}
+
+let holidays = 0;
+let money = 0;
+
+if (holidays == 0) {
+    money = 5000;
+    console.log(`my money is ${money}`);
+} else if (holidays == 1 || holidays == 2) {
+    money = 3000;
+    console.log(`my money is ${money}`);
+} else if (holidays == 3) {
+    money = 2000;
+    console.log(`my money us ${money}`);
+}
+
+let day = "Friday";
+
+switch (day.charAt(0).toUpperCase() + day.slice(1)) {
+    case day = "Friday": case day = "Saturday": case day = "Sunday":
+        document.write("<br>" + "No Appointments Available");
+        break;
+    case day = "Monday": case day = "Thursday":
+        document.write("<br>" + "From 10:00 AM To 5:00 PM");
+        break;
+    case day = "Tuesday":
+        document.write("<br>" + "From 10:00 AM To 6:00 PM");
+        break;
+    case day = "Wednesday":
+        document.write("<br>" + "From 10:00 AM To 7:00 PM");
+        break;
+    default:
+        document.write("<br" + "ist not a valid day");
+}
+// end 39
