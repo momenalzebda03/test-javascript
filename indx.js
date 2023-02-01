@@ -218,15 +218,15 @@ if ("ElzeroElzero" === "ElzeroElzero") {
     console.log("Good");
 }
 
-let num = 100;
+// let num = 100;
 
-if (num < 10) {
-    document.write("00" + num);
-} else if (num > 10 || num < 100) {
-    document.write("00" + num);
-} else if (num >= 100) {
-    document.write(num);
-}
+// if (num < 10) {
+//     document.write("00" + num);
+// } else if (num > 10 || num < 100) {
+//     document.write("00" + num);
+// } else if (num >= 100) {
+//     document.write(num);
+// }
 
 // let num1 = 9;
 // let str = "9";
@@ -315,3 +315,71 @@ switch (day.charAt(0).toUpperCase() + day.slice(1)) {
         document.write("<br" + "ist not a valid day");
 }
 // end 39
+
+// start 40
+
+let zero = 0;
+let counter = 3;
+
+let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// my.push("momen");
+// console.log(my.reverse().slice(counter));
+
+// my.pop();
+// my.shift();
+// console.log(my.reverse().slice(counter));
+
+// my.push("elzero");
+// my.shift();
+// my.shift();
+// console.log(my.slice(counter));
+
+let o = my[counter][zero].toUpperCase();
+
+zero++;
+counter++;
+
+console.log(my[zero][counter] + o);
+
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let num = 3;
+
+myFriends.pop();
+console.log(myFriends);
+
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+friends.shift();
+friends.pop()
+console.log(friends);
+
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
+
+finalArr = arrOne.concat(arrTwo).sort().reverse();
+
+console.log(finalArr);
+
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+
+words.shift(), words.shift(); if (words = "Elzero") { let elzero = "zero"; console.log(elzero.toUpperCase()); }
+
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+
+if (haystack[1] == needle) {
+    console.log("found");
+} else {
+    console.log("not JS here im soory");
+}
+
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = ["fxy"];
+
+console.log(allArrs); // fxy
+
+// end 47
