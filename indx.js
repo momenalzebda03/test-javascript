@@ -383,3 +383,91 @@ let allArrs = ["fxy"];
 console.log(allArrs); // fxy
 
 // end 47
+// start 48
+
+// let start = 10;
+// let end = 100;
+// let exelude = 40;
+
+// for (let i = start; i <= end; i += start) {
+//     if (i == exelude) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// let start = 10;
+// let end = 0;
+// let stop = 3;
+
+// for (let i = start; i >= end; i--) {
+//     if (i < start) {
+//         console.log(`0${i}`);
+//     }
+//     if (i == stop) {
+//         break;
+//     }
+// }
+
+// let start = 1;
+// let end = 6;
+// let brak = 2;
+
+// for (let i = start; i <= end; i++) {
+//     console.log(i);
+//     for (let j = brak; j <= end; j += brak) {
+//         if (j == end) {
+//             break;
+//         }
+//         console.log(`--${j}`);
+//     }
+// }
+
+// let indx = 10;
+// let jump = 2;
+// let end = 0;
+
+// let i = indx;
+// for (; ;) {
+//     i >= end;
+//     if (i == jump) {
+//         break;
+//     }
+//     console.log(i);
+//     i -= jump;
+// }
+
+// let friend = ["Ahemd", "Sayed", "Eman", "Mahmoud", "Amera", "Osama", "Sameh"];
+// let latter = "a";
+
+// for (let i = 0; i <= 6; i++) {
+//     if (friend[i].charAt(0).toLowerCase() == latter) {
+//         continue;
+//     }
+//     console.log(`${i} => ${friend[i]}`);
+// }
+
+// let start = 0;
+// let suappedname = "elZerO";
+// let resart = "";
+
+// for (let i = start; i < suappedname.length; i++) {
+//     if (suappedname[i] == suappedname[i].toUpperCase()) {
+//         resart += suappedname[i].toLowerCase();
+//     } else {
+//         resart += suappedname[i].toUpperCase();
+//     }
+// }
+// console.log(resart);
+
+// let start = 0;
+// let max = [1, 2, 3, "A", "B", "C", 4];
+
+// for (let i = max[start]; i <= max.length; i++) {
+//     if (typeof max[i] == "string") {
+//         continue;
+//     }
+//     console.log(max[i]);
+// }
+// end 53
