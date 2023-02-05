@@ -1,10 +1,10 @@
 // start 1
-document.write("<h1>Elzero</h1>");
-document.querySelector("h1").style.color = "blue";
-document.querySelector("h1").style.fontSize = "80px";
-document.querySelector("h1").style.color = "bold";
-document.querySelector("h1").style.textAlign = "center";
-document.querySelector("h1").style.fontFamily = "Arial";
+// document.write("<h1>Elzero</h1>");
+// document.querySelector("h1").style.color = "blue";
+// document.querySelector("h1").style.fontSize = "80px";
+// document.querySelector("h1").style.color = "bold";
+// document.querySelector("h1").style.textAlign = "center";
+// document.querySelector("h1").style.fontFamily = "Arial";
 // ---------------------------
 console.log("%cElzero %cWeb %cSchool", "color: red; font-size: 40px;", "color: green; font-size: 40px; font-weight: bold;", "color: white; font-size: 40px;  background-color: blue;");
 // ---------------------------
@@ -26,21 +26,21 @@ console.log("message tow");
 console.table(["elzero", "ahmed", "sameh", "gamal", "aya"]);
 // ---------------------------
 console.log("Iam In Console");
-document.write("Iam In Page");
+// document.write("Iam In Page");
 // alert("stop");
 // end 9
 // start 10
-var my_title = "elzero", my_description = "elzero web school", my_date = "25/10";
-var my_html = `<div class = 'card'>
+// var my_title = "elzero", my_description = "elzero web school", my_date = "25/10";
+// var my_html = `<div class = 'card'>
 
-    <h1>"${my_title}"</h1>
-    <p>"${my_description}"</p>
-    <span>"${my_date}"</span>
-</div>`;
+//     <h1>"${my_title}"</h1>
+//     <p>"${my_description}"</p>
+//     <span>"${my_date}"</span>
+// </div>`;
 
-for (let i = 0; i <= 3; i++) {
-    document.write(my_html);
-}
+// for (let i = 0; i <= 3; i++) {
+//     document.write(my_html);
+// }
 
 var number_one = 10;
 var number_tow = 20;
@@ -53,8 +53,8 @@ console.log(number_tow + "\n" + number_one);
 console.log(`${number_tow}
 ${number_one}`);
 
-console.log(elzero.innerHTML);
-console.log(typeof elzero);
+// console.log(elzero.innerHTML);
+// console.log(typeof elzero);
 
 console.log(`\`I'm In \n\\\\\nLove \\\\ """ '''\n++ With ++\n\\"""\\"""\n""javascript""\`\``);
 
@@ -245,19 +245,19 @@ if ("ElzeroElzero" === "ElzeroElzero") {
 //     document.write("<br>" + `${str} Is The Same Type As ${str2} But Not The Same Value`);
 // }
 
-let num1 = 10;
-let num2 = 30;
-let num3 = "30";
+// let num1 = 10;
+// let num2 = 30;
+// let num3 = "30";
 
-if (num3 > num1 && num3 !== num2) {
-    document.write("<br>" + num3 + "Is Larger Than" + num1 + "And Type string Not The Same Type As number");
-}
-if (num3 > num1 && num3 == num2 && num3 !== num2) {
-    document.write("<br>" + num3 + "Is Larger Than 10 And Value Is The Same As" + num3 + " And Type string Not The Same Type As number");
-}
-if (num3 !== num1 && num3 !== num2) {
-    document.write("<br>" + `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`);
-}
+// if (num3 > num1 && num3 !== num2) {
+//     document.write("<br>" + num3 + "Is Larger Than" + num1 + "And Type string Not The Same Type As number");
+// }
+// if (num3 > num1 && num3 == num2 && num3 !== num2) {
+//     document.write("<br>" + num3 + "Is Larger Than 10 And Value Is The Same As" + num3 + " And Type string Not The Same Type As number");
+// }
+// if (num3 !== num1 && num3 !== num2) {
+//     document.write("<br>" + `${num3} Value And Type Is Not The Same As ${num1} And Type Is Not The Same As ${num2}`);
+// }
 // end 37
 // start 38
 
@@ -296,30 +296,30 @@ if (holidays == 0) {
     console.log(`my money us ${money}`);
 }
 
-let day = "Friday";
+// let day = "Friday";
 
-switch (day.charAt(0).toUpperCase() + day.slice(1)) {
-    case day = "Friday": case day = "Saturday": case day = "Sunday":
-        document.write("<br>" + "No Appointments Available");
-        break;
-    case day = "Monday": case day = "Thursday":
-        document.write("<br>" + "From 10:00 AM To 5:00 PM");
-        break;
-    case day = "Tuesday":
-        document.write("<br>" + "From 10:00 AM To 6:00 PM");
-        break;
-    case day = "Wednesday":
-        document.write("<br>" + "From 10:00 AM To 7:00 PM");
-        break;
-    default:
-        document.write("<br" + "ist not a valid day");
-}
+// switch (day.charAt(0).toUpperCase() + day.slice(1)) {
+//     case day = "Friday": case day = "Saturday": case day = "Sunday":
+//         document.write("<br>" + "No Appointments Available");
+//         break;
+//     case day = "Monday": case day = "Thursday":
+//         document.write("<br>" + "From 10:00 AM To 5:00 PM");
+//         break;
+//     case day = "Tuesday":
+//         document.write("<br>" + "From 10:00 AM To 6:00 PM");
+//         break;
+//     case day = "Wednesday":
+//         document.write("<br>" + "From 10:00 AM To 7:00 PM");
+//         break;
+//     default:
+//         document.write("<br" + "ist not a valid day");
+// }
 // end 39
 
 // start 40
 
 let zero = 0;
-let counter = 3;
+// let counter = 3;
 
 let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
 
@@ -335,12 +335,12 @@ let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
 // my.shift();
 // console.log(my.slice(counter));
 
-let o = my[counter][zero].toUpperCase();
+// let o = my[counter][zero].toUpperCase();
 
 zero++;
-counter++;
+// counter++;
 
-console.log(my[zero][counter] + o);
+// console.log(my[zero][counter] + o);
 
 let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
 let num = 3;
@@ -348,11 +348,11 @@ let num = 3;
 myFriends.pop();
 console.log(myFriends);
 
-let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+// let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
 
-friends.shift();
-friends.pop()
-console.log(friends);
+// friends.shift();
+// friends.pop()
+// console.log(friends);
 
 let arrOne = ["C", "D", "X"];
 let arrTwo = ["A", "B", "Z"];
@@ -471,3 +471,55 @@ console.log(allArrs); // fxy
 //     console.log(max[i]);
 // }
 // end 53
+
+// start 54
+
+// let MyAdmin = ["Ahmed", "Osama", "Sayed", "Stop", "Samera", "Samera"];
+// let MyEmployee = ["Amged", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia", "Anuwar"];
+
+// for (let i = 0; i < MyAdmin.length; i++) {
+//     if (MyAdmin[i].charAt(0) == 'S') {
+//         MyAdmin.splice(i + 1);
+//         document.write(`<div>We Have ${MyAdmin.length} Admins</div>`);
+//     }
+// }
+// document.write("<hr>");
+// document.write(`<div>`);
+// for (let j = 0; j < MyAdmin.length; j++) {
+//     document.write(`The Admin For Team ${j + 1} Is ${MyAdmin[j]} <br>`);
+//     document.write(`<h3>Team Members:</h3>`);
+//     for (let q = 1; q < 4; q++) {
+//         for (let x = 0; x < MyEmployee.length; x++) {
+//             if (MyAdmin[j].charAt(0) == MyEmployee[x].charAt(0)) {
+//                 document.write(`<p>- ${q} ${MyEmployee[x]}</p>`);
+//             }
+//         }        
+//     }
+//     document.write("<hr>");
+// }
+// document.write(`</div>`);
+
+let frindes = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let indx = 0;
+let counter = 0;
+
+while (indx < frindes.length) {
+    if (frindes[indx] == "Sayed") {
+        console.log(`1 => ${frindes[indx]}`);
+    }
+    if (frindes[indx] == "Mahmoud") {
+        console.log(`2 => ${frindes[indx]}`);
+    }
+    indx++;
+}
+
+for (let i = 0; i < frindes.length; i++) {
+    if (typeof frindes[i] == "number") {
+        continue;
+    }
+    if (frindes[i].charAt(0) == "A") {
+        continue;
+    }
+    console.log(frindes[i]);
+}
+// end 56
