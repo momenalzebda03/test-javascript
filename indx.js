@@ -513,13 +513,115 @@ while (indx < frindes.length) {
     indx++;
 }
 
-for (let i = 0; i < frindes.length; i++) {
-    if (typeof frindes[i] == "number") {
-        continue;
-    }
-    if (frindes[i].charAt(0) == "A") {
-        continue;
-    }
-    console.log(frindes[i]);
-}
+// for (let i = 0; i < frindes.length; i++) {
+//     if (typeof frindes[i] == "number") {
+//         continue;
+//     }
+//     if (frindes[i].charAt(0) == "A") {
+//         continue;
+//     }
+//     console.log(frindes[i]);
+// }
 // end 56
+
+// start 57
+function ShowDetails(a, b, c) {
+    typeof a == "string" && typeof c == "boolean" && c == true ? document.write(`Hello ${a}, Your Age Is ${b}, Your Are Avalibles For Here<br>`) :
+        typeof a == "string" && typeof c == "boolean" && c == false ? document.write(`Hello ${a}, Your Age Is ${b}, Your Are Not Avalibles For Here<br>`) :
+            typeof a == "number" && typeof c == "boolean" && c == true ? document.write(`Hello ${b}, Your Age Is ${a}, Your Are Avalibles For Here<br>`) :
+                typeof a == "number" && typeof c == "boolean" && c == false ? document.write(`Hello ${b}, Your Age Is ${a}, Your Are Not Avalibles For Here<br>`) :
+                    typeof a == "boolean" && a == true && typeof b == "number" ? document.write(`Hello ${c}, Your Age Is ${b}, Your Are Avalibles For Here<br>`) :
+                        typeof a == "boolean" && a == true && typeof b == "string" ? document.write(`Hello ${b}, Your Age Is ${c}, Your Are Avalibles For Here<br>`) :
+                            typeof a == "boolean" && a == false && typeof b == "number" ? document.write(`Hello ${c}, Your Age Is ${b}, Your Are Not Avalibles For Here<br>`) :
+                                typeof a == "boolean" && a == false && typeof b == "string" ? document.write(`Hello ${b}, Your Age Is ${c}, Your Are Not Avalibles For Here<br>`) : document.write("Im Soory Not Here The Fun");
+}
+
+ShowDetails("Osama", 38, true);
+ShowDetails(38, "Osama", true);
+ShowDetails(true, 38, "Osama");
+ShowDetails(false, "Osama", 38);
+
+function sayHello(theName, theGender = "") {
+    if (theGender == "Male") {
+        theGender = "Mr";
+    } else if (theGender == "Female") {
+        theGender = "Miss";
+    }
+    document.write(`<br>Hello ${theGender} ${theName}`);
+}
+
+sayHello("Osama", "Male");
+sayHello("Eman", "Female");
+sayHello("Sameh");
+
+function calculate(firstNum, secondNum, operation) {
+    if (secondNum == undefined) {
+        document.write("<br><br>" + "Second Number Not Found");
+    } else if (operation == undefined) {
+        document.write(`<br> ${firstNum + secondNum}`);
+    }
+    if (operation == "add") {
+        document.write(`<br> ${firstNum + secondNum}`);
+    } else if (operation == "subtract") {
+        document.write(`<br> ${firstNum - secondNum}`);
+    } else if (operation == "multiply") {
+        document.write(`<br> ${firstNum * secondNum}`);
+    }
+}
+
+calculate(20);
+calculate(20, 30);
+calculate(20, 30, 'add');
+calculate(20, 30, 'subtract');
+calculate(20, 30, 'multiply');
+
+function ageInTime(theAge) {
+    if (theAge <= 10 || theAge >= 110) {
+        document.write("<br><br>" + "Age Out Of Range" + "<br>");
+    } else {
+        document.write(` ${theAge} year<br>`);
+        var months = theAge * 12;
+        document.write(` ${months} Months<br>`);
+        var months = months * 4.34 + 2;
+        document.write(` ${months} weeks<br>`);
+        var months = months * 7;
+        document.write(` ${months} dayes<br>`);
+        var months = months * 24;
+        document.write(` ${months} hours<br>`);
+        var months = months * 60;
+        document.write(` ${months} minutes<br>`);
+        var months = months * 60 * 60;
+        document.write(` ${months} seconds<br>`);
+    }
+}
+
+ageInTime(110);
+ageInTime(20);
+
+function createSelectBox(startYear, endYear) {
+    document.write("<br><select>");
+    for (let i = startYear; i <= endYear; i++) {
+        document.write("<option>");
+        document.write(i + "<br>");
+        document.write("</option>");
+    }
+    document.write("<select><br><br>");
+}
+createSelectBox(2000, 2023);
+
+function multiply(...array) {
+    var resart = 1;
+    for (let q = 0; q < array.length; q++) {
+        if (typeof array[q] == "string") {
+            continue;
+        } else {
+            resart = parseInt(array[q - 1]) * parseInt(array[q]);
+        }
+    }
+    return resart + "<br>";
+}
+
+document.write(multiply(10, 20));
+document.write(multiply("A", 10, 30));
+document.write(multiply(100.5, 10, "B"));
+// end 63
