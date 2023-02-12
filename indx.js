@@ -625,3 +625,93 @@ document.write(multiply(10, 20));
 document.write(multiply("A", 10, 30));
 document.write(multiply(100.5, 10, "B"));
 // end 63
+
+// start 64
+
+let names = function (...array_string) {
+    console.log("String");
+    for (let i = 0; i < array_string.length; i++) {
+        names = `[${array_string[i]}],`;
+        console.log(names);
+    }
+    console.log("=> Done!");
+    names == NaN ? console.log() : names = "";
+    return names;
+}
+
+console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+
+let myNumbers = [20, 50, 10, 60];
+
+let calc = (one, tow, ...nums) => nums[+(!Array.isArray(myNumbers))] + one + tow;
+
+console.log(calc(20, 50, 10, 60));
+
+// function getDetails(zName, zAge, zCountry) {
+//     function namePattern(zName) {
+//         if (zName[6] == "M") {
+//             zName = "Osama M.";
+//         }
+//         if (zName[6] == "a") {
+//             zName = "Ahemd a.";
+//         }
+//         let resart = `Hello ${zName}, `;
+//         return resart;
+//     }
+//     function ageWithMessage(zAge) {
+//         let resart = `Your Is ${zAge}, `;
+//         return resart;
+//     }
+//     function countryTwoLetters(zCountry) {
+//         let resart = `Your Live In ${zCountry[0]}${zCountry[1]}`;
+//         return resart;
+//     }
+//     function fullDetails() {
+//         return namePattern(zName) + ageWithMessage(zAge) + countryTwoLetters(zCountry);
+//     }
+//     return fullDetails();
+// }
+
+// console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
+// console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
+
+function itsMe() {
+    return `Iam A Normal Function`;
+}
+
+itsMe = () => { return `Iam A Normal Function`; }
+
+console.log(itsMe());
+
+// function urlCreate(protocol, web, tld) {
+//     return `${protocol}://www.${web}.${tld}`;
+// }
+
+let urlCreate = (protocol, web, tld) => { return `${protocol}://www.${web}.${tld}`; }
+
+console.log(urlCreate("https", "elzero", "org"));
+
+var checker = (zName) => { return (status) => { return (salary) => { return status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Avaialble`; }; }; }
+
+console.log(checker("Osama")("Available")(4000));
+console.log(checker("Ahmed")("Not Available")());
+
+function specialMix(...data) {
+    let resart = 0;
+    for (let m = 0; m < data.length; m++) {
+        if (isNaN(parseInt(data[m])) === false) {
+            resart += parseInt(data[m]);
+        }
+    }
+    if (resart === 0) {
+        resart = "All Im String";
+    }
+    return resart;
+}
+
+console.log(specialMix(10, 20, 30));
+console.log(specialMix("10Test", "Testing", "20Cool"));
+console.log(specialMix("Testing", "10Testing", "40Cool"));
+console.log(specialMix("Test", "Cool", "Test"));
+
+// end 70
