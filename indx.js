@@ -565,7 +565,7 @@ function calculate(firstNum, secondNum, operation) {
     } else if (operation == "subtract") {
         document.write(`<br> ${firstNum - secondNum}`);
     } else if (operation == "multiply") {
-        document.write(`<br> ${firstNum * secondNum}`);
+        document.write(`<br> ${firstNum * secondNum}<br>`);
     }
 }
 
@@ -595,8 +595,8 @@ function ageInTime(theAge) {
     }
 }
 
-ageInTime(110);
-ageInTime(20);
+// ageInTime(110);
+ageInTime(19);
 
 function createSelectBox(startYear, endYear) {
     document.write("<br><select>");
@@ -698,20 +698,47 @@ console.log(checker("Ahmed")("Not Available")());
 
 function specialMix(...data) {
     let resart = 0;
-    for (let m = 0; m < data.length; m++) {
-        if (isNaN(parseInt(data[m])) === false) {
-            resart += parseInt(data[m]);
+    for (let x = 0; x < data.length; x++) {
+        if (isNaN(parseInt(data[x])) == false) {
+            resart += parseInt(data[x]);
         }
     }
     if (resart === 0) {
-        resart = "All Im String";
+        resart = "this the string";
     }
     return resart;
 }
 
-console.log(specialMix(10, 20, 30));
-console.log(specialMix("10Test", "Testing", "20Cool"));
+console.log(specialMix(10, 20));
+console.log(specialMix("20Test", "Testing", "20Cool"));
 console.log(specialMix("Testing", "10Testing", "40Cool"));
 console.log(specialMix("Test", "Cool", "Test"));
-
 // end 70
+// start 71
+
+let string = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,z";
+let slout = string.split("").filter((ele) => ele == "," ? "" : !isNaN(parseInt(ele)) ? "" : ele).slice(true, -isNaN(string)).join("").replaceAll("_", " ");
+console.log(slout);
+
+let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
+let mix_map = mix.map((ele) => !isNaN(parseInt(ele)) ? "" : ele).join("");
+console.log(mix_map);
+
+let myString = "EElllzzzzzzzeroo";
+let pushArray = [];
+myString.split("").filter((ele) => !pushArray.includes(ele) ? pushArray.push(ele) : "");
+console.log(pushArray.join(""));
+
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+const loukhere = myArray.reduce((total, amount) => total.concat(amount), []);
+console.log(loukhere.join(""));
+
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+let my_map = numsAndStrings.map((ele) => typeof ele == "string" ? "" : -ele).filter((ele) => ele);
+console.log(my_map);
+
+let nums = [2, 12, 11, 5, 10, 1, 99];
+let my_nums = nums.reduce((ele1, ele2) => ele2 % 2 == 0 ? ele1 * ele2 : ele1 + ele2, 1);
+console.log(my_nums);
+
+// end 78
