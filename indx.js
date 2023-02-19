@@ -196,27 +196,27 @@ let c = 10;
 // end 32
 
 // start 33
-let a = 10;
+// let a = 10;
 
-a < 10 ? console.log(10) : a >= 10 && a <= 40 ? console.log("10 to 40") : a > 40 ? console.log("> 40") : console.log("unknown");
+// a < 10 ? console.log(10) : a >= 10 && a <= 40 ? console.log("10 to 40") : a > 40 ? console.log("> 40") : console.log("unknown");
 
-let st = "Elzero Web School";
+// let st = "Elzero Web School";
 
-if (st.length * 2 == "34") {
-    console.log("Good");
-}
-if (st.toLowerCase().charAt(7) === "w") {
-    console.log("Good");
-}
-if (st !== "string") {
-    console.log("Good");
-}
-if (typeof Number(st) === "number") {
-    console.log("Good");
-}
-if ("ElzeroElzero" === "ElzeroElzero") {
-    console.log("Good");
-}
+// if (st.length * 2 == "34") {
+//     console.log("Good");
+// }
+// if (st.toLowerCase().charAt(7) === "w") {
+//     console.log("Good");
+// }
+// if (st !== "string") {
+//     console.log("Good");
+// }
+// if (typeof Number(st) === "number") {
+//     console.log("Good");
+// }
+// if ("ElzeroElzero" === "ElzeroElzero") {
+//     console.log("Good");
+// }
 
 // let num = 100;
 
@@ -740,5 +740,93 @@ console.log(my_map);
 let nums = [2, 12, 11, 5, 10, 1, 99];
 let my_nums = nums.reduce((ele1, ele2) => ele2 % 2 == 0 ? ele1 * ele2 : ele1 + ele2, 1);
 console.log(my_nums);
-
 // end 78
+
+// start 79
+
+let member = {
+    name: "Elzero",
+    age: 38,
+    country: "Egypt",
+    fullDetails: function () {
+        return `My Name Is ${this.name}, My Age Is ${this.age}, I Live In ${this.country}`;
+    }
+};
+console.log(member.name);
+console.log(member.age);
+console.log(member.country);
+console.log(member.fullDetails());
+
+let objMethodOne = {
+    property: "Method One"
+};
+console.log(objMethodOne.property);
+let objMethodTwo = new Object({
+    property: "Method Two"
+});
+console.log(objMethodTwo.property);
+let objMethodThree = Object.create({
+    property: "Method Three"
+});
+console.log(objMethodThree.property);
+let objMethodFour = Object.assign({
+    property: "Method Four"
+});
+console.log(objMethodFour.property);
+
+let a = 1;
+let threeNums = {
+    b: 2,
+    c: 3,
+    d: 4,
+};
+let twoNums = {
+    e: 5,
+    f: 6,
+};
+let finalObject = Object.assign(a, threeNums, twoNums);
+console.log(finalObject);
+
+let myFavGames = {
+    "Trinity Universe": {
+        publisher: "NIS America",
+        price: 40,
+    },
+    "Titan Quest": {
+        publisher: "THQ",
+        bestThree: {
+            one: "Immortal Throne",
+            two: "Ragnarök",
+            three: "Atlantis",
+        },
+        price: 50,
+    },
+    YS: {
+        publisher: "Falcom",
+        bestThree: {
+            one: "Oath in Felghana",
+            two: "Ark Of Napishtim",
+            three: "origin",
+        },
+        price: 40,
+    }
+};
+
+let objectLength = Object.keys(myFavGames).length;
+
+let game = Object.keys(myFavGames);
+
+for (let i = 0; i < objectLength; i++) {
+    console.log(`The Game Name Is ${game[i]} `);
+    console.log(`The Publisher Is ${myFavGames[game[i]].publisher}`);
+    console.log(`The Price Is ${myFavGames[game[i]].price}`);
+
+    if (Object.hasOwn(myFavGames[game[i]], "bestThree")) {
+        console.log("- Game Has Releases");
+        console.log(`First => ${myFavGames[game[i]]["bestThree"].one}`);
+        console.log(`Second => ${myFavGames[game[i]]["bestThree"].tow}`);
+        console.log(`Third => ${myFavGames[game[i]]["bestThree"].three}`);
+    }
+    console.log("#".repeat(20));
+}
+// end 85
