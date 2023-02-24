@@ -830,3 +830,54 @@ for (let i = 0; i < objectLength; i++) {
     console.log("#".repeat(20));
 }
 // end 85
+// start 86
+console.log(document.getElementById("elzero"));
+
+for (let i = 0; i <= 9; i++) {
+    document.images[i].src = "https://elzero.org/wp-content/themes/elzero/imgs/logo.png";
+    document.images[i].alt = "Elzero Logo";
+    console.log(document.images[i]);
+}
+
+let dollar = document.getElementsByName("dollar")[0];
+let span_dollar = document.getElementById("span_dollar");
+let span_pund = document.getElementById("span_pund");
+
+dollar.addEventListener("input", () => {
+    let pund = span_dollar.innerText = dollar.value;
+    span_pund.innerText = pund * 30.66;
+})
+
+var one = document.querySelector(".one");
+one.title = "one";
+one.innerText = "one";
+var tow = document.querySelector(".two");
+tow.title = "two";
+tow.innerText = "two 2";
+
+for (let i = 10; i <= 14; i++) {
+    if (document.images[i].alt == "") {
+        document.images[i].alt = "Elzero New";
+        console.log(document.images[i]);
+    } else {
+        document.images[i].alt = "Old";
+        console.log(document.images[i]);
+    }
+}
+
+var input_btn = document.getElementById("input_btn");
+var input_text = document.getElementById("input_text");
+input_btn.onclick = function () {
+    var input_number = document.getElementById("input_number");
+    var div_flex = document.createElement("div");
+    div_flex.className = "div_flex";
+    for (let i = 0; i < input_number.value; i++) {
+        let div = document.createElement("div");
+        div.className = "results";
+        let text = document.createTextNode(input_text.value);
+        div.appendChild(text);
+        div_flex.appendChild(div);
+    }
+    document.body.appendChild(div_flex);
+}
+// end 93
