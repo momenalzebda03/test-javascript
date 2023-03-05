@@ -1080,3 +1080,37 @@
 // )
 
 // end 101
+// start 102
+// var number1 = document.getElementById("input1");
+// var number2 = document.getElementById("input2");
+// var button = document.getElementById("btn");
+
+// button.onclick = () => {
+//     for (let i = +number1.value; i <= +number2.value; i++) {
+//         document.write(`${i}<br>`);
+//     }
+// }
+
+// var div_poup = document.getElementById("div_poup");
+// var icon = document.getElementById("div_icon");
+
+// setTimeout(() => {
+//     div_poup.style.display = "block";
+// }, 5000);
+
+// icon.onclick = function () {
+//     div_poup.remove();
+// }
+
+// let tiem = setInterval(() => {
+//     var div_number = document.getElementById("div_number").innerText -= 1;
+//     if (div_number <= 5) {
+//         window.open("https://elzero.org/javascript-bootcamp-assignments-lesson-from-102-to-110/", "mywin", "width=500,height=500");
+//     }
+//     if (div_number <= 0) {
+//         window.open("https://elzero.org/javascript-bootcamp-assignments-lesson-from-102-to-110/");
+//         clearInterval(tiem);
+//     }
+// }, 1000);
+
+// end 110
