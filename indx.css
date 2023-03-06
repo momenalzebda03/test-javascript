@@ -188,3 +188,9 @@
     position: absolute;
     cursor: pointer;
 } */
+
+.my_center div {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+}

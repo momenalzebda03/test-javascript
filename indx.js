@@ -1112,5 +1112,86 @@
 //         clearInterval(tiem);
 //     }
 // }, 1000);
-
 // end 110
+
+// start 110
+// var btn = document.getElementById("btn");
+// btn.addEventListener("click", () => {
+//     var input = document.getElementById("input");
+//     var create_div = document.createElement("div");
+//     create_div.id = "div_create";
+//     var div_one = document.createElement("div");
+//     create_div.appendChild(div_one);
+//     var p = document.createElement("p");
+//     div_one.appendChild(p);
+//     var create_text = document.createTextNode(input.value);
+//     p.appendChild(create_text);
+//     var button = document.createElement("button");
+//     button.id = "im_button";
+//     var button_text = document.createTextNode("delete");
+//     button.appendChild(button_text);
+//     div_one.appendChild(button);    
+//     document.body.appendChild(create_div);
+//     if (input.value == "") {
+//         create_div.remove();
+//     }
+//     window.localStorage.setItem("create", create_div.innerHTML);
+// });
+// document.write(window.localStorage.getItem("create"));
+// var my_button = document.getElementById("im_button");
+// my_button.addEventListener("click", () => {
+//     window.localStorage.removeItem("create");
+// });
+
+// var type_string = document.getElementById("type_string");
+// var btn = document.getElementById("btn");
+// btn.addEventListener("click", () => {
+//     var my_type_string = document.getElementById("my_type_string");
+//     my_type_string.style.fontFamily = type_string.value;
+//     window.localStorage.setItem("click_fimlay", type_string.value);
+// });
+// my_type_string.style.fontFamily = window.localStorage.getItem("click_fimlay");
+
+// var type_color = document.getElementById("type_color");
+// btn.addEventListener("click", () => {
+//     var my_type_string = document.getElementById("my_type_string");
+//     my_type_string.style.color = type_color.value;
+//     window.localStorage.setItem("click_color", type_color.value);
+// });
+// my_type_string.style.color = window.localStorage.getItem("click_color");
+
+// var type_size = document.getElementById("type_size");
+// btn.addEventListener("click", () => {
+//     var my_type_string = document.getElementById("my_type_string");
+//     my_type_string.style.fontSize = type_size.value;
+//     window.localStorage.setItem("click_size", type_size.value);
+// });
+// my_type_string.style.fontSize = window.localStorage.getItem("click_size");
+
+// var input1 = document.getElementById("input1");
+// var input2 = document.getElementById("input2");
+// var input3 = document.getElementById("input3");
+// var my_click = document.getElementById("my_click");
+// input1.addEventListener("keyup", () => {
+//     window.localStorage.setItem("input1", input1.value);
+// })
+// input1.value = window.localStorage.getItem("input1");
+
+// input2.addEventListener("keyup", () => {
+//     window.localStorage.setItem("input2", input2.value);
+// })
+// input2.value = window.localStorage.getItem("input2");
+
+// input3.addEventListener("keyup", () => {
+//     window.localStorage.setItem("input3", input3.value);
+// })
+// input3.value = window.localStorage.getItem("input3");
+
+// var im_select = document.getElementById("im_select");
+// var button = document.getElementById("button");
+
+// button.addEventListener("click", () => {
+//     window.localStorage.setItem("im_select", im_select.value);
+// });
+// im_select.value = window.localStorage.getItem("im_select");
+// end 114
