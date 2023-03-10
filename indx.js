@@ -1195,3 +1195,116 @@
 // });
 // im_select.value = window.localStorage.getItem("im_select");
 // end 114
+// start 115
+// let chosen = 1;
+
+// let myfriends = [
+//     { title: "osama", age: 39, available: true, skills: ["html", "css"] },
+//     { title: "ahmed", age: 25, available: false, skills: ["python", "django"] },
+//     { title: "sayed", age: 33, available: true, skills: ["php", "laravel"] }
+// ];
+// const newArray1 = myfriends.map(element => {
+//     if (chosen == 1) {
+//         if (element.available == true) {
+//             element.available = "available";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         } else {
+//             element.available = "notavailable";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         }
+//     }
+// });
+// console.log(newArray1[0]);
+
+// const newArray2 = myfriends.map(element => {
+//     if (chosen == 2) {
+//         if (element.available == true) {
+//             element.available = "available";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         } else {
+//             element.available = "notavailable";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         }
+//     }
+// });
+// console.log(newArray2[1]);
+
+// const newArray3 = myfriends.map(element => {
+//     if (chosen == 3) {
+//         if (element.available == true) {
+//             element.available = "available";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         } else {
+//             element.available = "notavailable";
+//             return element.title + " " + element.age + " " + element.available + " " + element.skills[0] + " " + element.skills[1];
+//         }
+//     }
+// });
+// console.log(newArray3[2]);
+
+// let myNumbers = [1, 2, 3, 4, 5];
+// let [a, , , , e] = myNumbers;
+// console.log(a * e);
+
+// let mySkills = ["HTML", "CSS", "JavaScript", ["PHP", "Python", ["Django", "Laravel"]]];
+// let [a, b, c, [d, e, [f, g]]] = mySkills;
+// console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
+
+// let arr1 = ["Ahmed", "Sameh", "Sayed"];
+// let arr2 = ["Mohamed", "Gamal", "Amir"];
+// let arr3 = ["Haytham", "Shady", "Mahmoud"];
+// let [c] = arr1;
+// let [, a, b] = arr3;
+// console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+
+// const member = {
+//     age: 30,
+//     working: false,
+//     country: "Egypt",
+//     hobbies: ["Reading", "Swimming", "Programming"],
+// };
+
+// let { age: a, working: w } = member;
+// console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
+
+// let { country: c } = member;
+// console.log(`I Live in ${c}`);
+
+// let { hobbies: [h1, , h3] } = member;
+// console.log(`My Hobbies: ${h1} And ${h3}`);
+
+// const game = {
+//     title: "YS",
+//     developer: "Falcom",
+//     releases: {
+//         "Oath In Felghana": ["USA", "Japan"],
+//         "Ark Of Napishtim": {
+//             US: "20 USD",
+//             JAP: "10 USD",
+//         },
+//         Origin: "30 USD",
+//     },
+// };
+
+// let { title: t, developer: d, releases: { "Oath In Felghana": [u, j], Origin: or } } = game;
+// console.log(`My Favourite Games Style Is ${t} Style`);
+
+// console.log(`And I Love ${d} Games`);
+
+// let i = Object.entries(game.releases)[0];
+// let [o] = i;
+// console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
+
+// let y = Object.entries(game.releases)[1];
+// let [a] = y;
+// console.log(`Although I Love ${a}`);
+
+// let { releases: { "Ark Of Napishtim": ark } } = game;
+// let { US: u_price, JAP: j_price } = ark;
+// console.log(`${a} Price in USA Is ${u_price}`);
+
+// console.log(`${a} Price in Japan Is ${j_price}`);
+
+// console.log(`Origin Price Is ${or}`);
+
+// end 122
